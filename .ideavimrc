@@ -1,0 +1,24 @@
+let mapleader=" "
+
+set ignorecase
+set smartcase
+
+" Plugins
+set surround
+set multiple-cursors
+set commentary
+
+set ideajoin
+set clipboard+=ideaput
+
+nmap <leader>rc :source ~/.ideavimrc<cr>
+nmap <leader>f :action KJumpAction.Word0<cr>
+nmap <a-p> :action PreviousTab<cr>
+nmap <a-n> :action NextTab<cr>
+nmap <leader>bd :q<cr>
+nmap <leader>fr :action RecentFiles<cr>
+nmap <leader>fa :action SearchEverywhere<cr>
+nmap <leader>ff :action GotoFile<cr>
+
+nmap gr :action FindUsages<cr>
+nmap gi :action ReSharperGotoImplementation<cr>
